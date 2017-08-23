@@ -12,7 +12,7 @@ function renderChart(params) {
     data: null
   };
 
-  /*############### IF EXISTS OVERWRITE ATTRIBUTES FROM PASSED PARAM  #######  */
+  /*############### IF EXISTS OVERWRITE ATTRIBUTES FROM PASSED PARAM  ##############  */
 
   var attrKeys = Object.keys(attrs);
   attrKeys.forEach(function (key) {
