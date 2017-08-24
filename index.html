@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Chart</title>
+    <title>Line Chart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="shortcut icon" href="https://repository.sleeplessbeastie.eu/img/favicon.png" type="image/x-icon">
 </head>
 
 <body translate="no">
@@ -22,21 +22,21 @@
     var mainDataObject = {
       legends: [{ name: "N. America", color: "#e9df60", id: 1 }, { name: "Rest of the World", color: "#AED367", id: 2 }, { name: "Rest of the World (excl. FSU)", color: "#79C275", id: 3 }, { name: "Global", color: "#0094bc", id: 4 }, { name: "Former Soviet Union", color: "#01779b", id: 5 }, { name: "Global (excl. FSU)", color: "#444f66", id: 6 }, { name: "Middle East", color: "#c22c11", id: 7 }, { name: "N. Africa", color: "#de4e0b", id: 8 }, { name: "Sub Saharan Africa", color: "#eeab26", id: 9 }, { name: "South & SE Asia", color: "#f18c17", id: 10 }],
       lines: [
-        { label: "Q2 15'", points: [{ legendId: 1, value: 3500 }, { legendId: 2, value: 8000 }, { legendId: 3, value: 10000 }, { legendId: 4, value: 9000 }, { legendId: 5, value: 5000 }, { legendId: 6, value: 10500 }, { legendId: 7, value: 5000 }, { legendId: 8, value: 4000 }, { legendId: 9, value: 5500 }, { legendId: 10, value: 5000 }] },
-        { label: "Q3 15'", values: [{ legendId: 1, value: 1500 }, { legendId: 2, value: 3500 }, { legendId: 3, value: 3000 }, { legendId: 4, value: 4000 }, { legendId: 5, value: 5000 }, { legendId: 6, value: 9500 }, { legendId: 7, value: 9200 }, { legendId: 8, value: 8000 }, { legendId: 9, value: 8100 }, { legendId: 10, value: 16000 }] },
-        { label: "Q4 15'", values: [{ legendId: 1, value: 1200 }, { legendId: 2, value: 500 }, { legendId: 3, value: 4000 }, { legendId: 4, value: 6000 }, { legendId: 5, value: 5500 }, { legendId: 6, value: 5000 }, { legendId: 7, value: 5200 }, { legendId: 8, value: 6000 }, { legendId: 9, value: 7000 }, { legendId: 10, value: 4000 }] },
-        { label: "Q1 16'", values: [{ legendId: 1, value: 5000 }, { legendId: 2, value: 6000 }, { legendId: 3, value: 5000 }, { legendId: 4, value: 5000 }, { legendId: 5, value: 6000 }, { legendId: 6, value: 2000 }, { legendId: 7, value: 3000 }, { legendId: 8, value: 16000 }, { legendId: 9, value: 8000 }, { legendId: 10, value: 4500 }] },
-        { label: "Q2 16'", values: [{ legendId: 1, value: 1100 }, { legendId: 2, value: 6500 }, { legendId: 3, value: 3000 }, { legendId: 4, value: 6500 }, { legendId: 5, value: 6000 }, { legendId: 6, value: 6000 }, { legendId: 7, value: 6000 }, { legendId: 8, value: 6500 }, { legendId: 9, value: 6000 }, { legendId: 10, value: 12000 }] },
-        { label: "Q3 16'", values: [{ legendId: 1, value: 1100 }, { legendId: 2, value: 6500 }, { legendId: 3, value: 3000 }, { legendId: 4, value: 6500 }, { legendId: 5, value: 6000 }, { legendId: 6, value: 6000 }, { legendId: 7, value: 6000 }, { legendId: 8, value: 6500 }, { legendId: 9, value: 6000 }, { legendId: 10, value: 12000 }] },
-        { label: "Q4 16'", values: [{ legendId: 1, value: 1000 }, { legendId: 2, value: 4000 }, { legendId: 3, value: 4000 }, { legendId: 4, value: 1500 }, { legendId: 5, value: 4000 }, { legendId: 6, value: 4000 }, { legendId: 7, value: 3500 }, { legendId: 8, value: 3500 }, { legendId: 9, value: 4000 }, { legendId: 10, value: 8500 }] },
-        { format: "(YTD)", label: "Q1 17'", values: [{ legendId: 1, value: 3800 }, { legendId: 2, value: 3000 }, { legendId: 3, value: 4500 }, { legendId: 4, value: 3500 }, { legendId: 5, value: 8000 }, { legendId: 6, value: 20000 }, { legendId: 7, value: 5000 }, { legendId: 8, value: 5000 }, { legendId: 9, value: 3500 }, { legendId: 10, value: 7500 }] }
+        { legendId: 1, lines: [{ value: 12.1 }, { value: 12 }, { value: 11 },{ value: 10.9 }, { value: 10.7 }, { value: 10.6 },{ value: 10.4 }, { value: 12 }] },
+        { legendId: 2, lines: [{ value: 10.5 }, { value: 12 }, { value: 10.4 }, { value: 8 }, { value: 10.6 }, { value: 10.3 }, { value: 8,1 }, { value: 10.45 }] },
+        { legendId: 3, lines: [{ value: 1200 }, { value: 500 }, { value: 4000 },  { value: 6000 }, { value: 5500 }, { value: 5000 }, { value: 5200 }, { value: 6000 }] },
+        { legendId: 4, lines: [{ value: 5000 }, { value: 6000 }, { value: 5000 }, { value: 5000 }, { value: 6000 }, { value: 2000 }, { value: 3000 }, { value: 16000}] },
+        { legendId: 5, lines: [{ value: 1100 }, { value: 6500 }, { value: 3000 }, { value: 6500 }, { value: 6000 }, { value: 6000 }, { value: 6000 }, { value: 6500 }] },
+        { legendId: 6, lines: [{ value: 1100 }, { value: 6500 }, { value: 3000 }, { value: 6500 }, { value: 6000 }, { value: 6000 }, { value: 6000 }, { value: 6500 }] },
+        { legendId: 7, lines: [{ value: 1000 }, { value: 4000 }, { value: 4000 }, { value: 1500 }, { value: 4000 }, { value: 4000 }, { value: 3500 }, { value: 3500 }] },
+        { legendId: 8, lines: [{ value: 3800 }, { value: 3000 }, { value: 4500 }, { value: 3500 }, { value: 8000 }, { value: 20000 },{ value: 5000 }, { value: 5000 }] },
+        { legendId: 9, lines: [{ value: 3800 }, { value: 3000 }, { value: 4500 }, { value: 3500 }, { value: 8000 }, { value: 20000 },{ value: 5000 }, { value: 5000 }] },
+        { legendId: 10, lines: [{ value: 3800 }, { value: 3000 }, { value: 4500 }, { value: 3500 }, { value: 8000 }, { value: 20000 },{ value: 5000 }, { value: 5000}] }
       ],
       format: "US$ / boe",
       description: "Place holder for X axis description"
     }
     
-
-
 
           var chart = renderChart()
                 .svgHeight(window.innerHeight-30)
@@ -45,7 +45,6 @@
                 .data(mainDataObject)
                 .debug(true)
                 .run()
-
 
     </script>
 
